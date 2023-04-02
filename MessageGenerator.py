@@ -1,7 +1,7 @@
 import openai
 
 def askGPT(text):
-    openai.api_key = "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"
+    openai.api_key = "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"
     response = openai.Completion.create(
     engine = "text-davinci-003",
     prompt = text,
@@ -11,7 +11,7 @@ def askGPT(text):
     return print(response.choices[0].text)
 
 def main():
-    input = "write a rude message to gaslight people into being eco friendly"
+    input = "make a message that's insulting and rude like kevin hart"
     askGPT(input)
 
 main()
